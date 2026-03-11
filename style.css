@@ -977,7 +977,7 @@ body {
 /* Skip Link */
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: -100px;
   left: var(--space-4);
   background: var(--color-primary);
   color: #fff;
