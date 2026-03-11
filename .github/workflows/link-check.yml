@@ -1,0 +1,37 @@
+name: Link Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Run weekly on Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,204,206,301,302,308
+            --timeout 30
+            --max-retries 3
+            --exclude-loopback
+            '*.md'
+          fail: true
+
+      - name: Create Issue on Failure
+        if: failure()
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🔗 Link Check Report"
+          content-filepath: ./lychee/out.md
+          labels: broken-link, automated

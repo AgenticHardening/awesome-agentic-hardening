@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (for local linting)
+node_modules/
+package-lock.json
+
+# Temp files
+*.tmp
+*.bak
