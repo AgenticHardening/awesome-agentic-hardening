@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>awesome-agentic-hardening — Curated Agentic AI Security Resources</title>
+<meta name="description" content="A curated list of tools, papers, frameworks, and best practices for hardening agentic AI systems — covering prompt injection defense, runtime sandboxing, protocol security, red teaming, and governance standards.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="awesome-agentic-hardening">
+<meta property="og:description" content="A curated list of tools, papers, frameworks, and best practices for hardening agentic AI systems.">
+<meta property="og:url" content="https://agentichardening.ai">
+<meta property="og:site_name" content="awesome-agentic-hardening">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="awesome-agentic-hardening">
+<meta name="twitter:description" content="A curated list of tools, papers, frameworks, and best practices for hardening agentic AI systems.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+<!-- Preconnect fonts -->
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- Skip link -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="header__logo" aria-label="awesome-agentic-hardening home">
+      <svg width="28" height="32" viewBox="0 0 56 64" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="logo-grad-sm" x1="0" y1="0" x2="56" y2="64" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="var(--color-primary-start)"/>
+            <stop offset="100%" stop-color="var(--color-primary-end)"/>
+          </linearGradient>
+        </defs>
+        <path d="M28 2L52 16V48L28 62L4 48V16L28 2Z" stroke="url(#logo-grad-sm)" stroke-width="3" fill="none"/>
+        <path d="M28 14L42 22V38L28 46L14 38V22L28 14Z" stroke="url(#logo-grad-sm)" stroke-width="2" fill="none" opacity="0.6"/>
+        <circle cx="28" cy="24" r="3" fill="url(#logo-grad-sm)"/>
+        <circle cx="20" cy="36" r="2.5" fill="url(#logo-grad-sm)" opacity="0.8"/>
+        <circle cx="36" cy="36" r="2.5" fill="url(#logo-grad-sm)" opacity="0.8"/>
+        <circle cx="28" cy="42" r="2" fill="url(#logo-grad-sm)" opacity="0.6"/>
+        <line x1="28" y1="27" x2="20" y2="33.5" stroke="url(#logo-grad-sm)" stroke-width="1.5" opacity="0.5"/>
+        <line x1="28" y1="27" x2="36" y2="33.5" stroke="url(#logo-grad-sm)" stroke-width="1.5" opacity="0.5"/>
+        <line x1="20" y1="38.5" x2="28" y2="40" stroke="url(#logo-grad-sm)" stroke-width="1.2" opacity="0.4"/>
+        <line x1="36" y1="38.5" x2="28" y2="40" stroke="url(#logo-grad-sm)" stroke-width="1.2" opacity="0.4"/>
+      </svg>
+      <span>agentic-hardening</span>
+    </a>
+
+    <nav class="header__nav" id="nav" role="navigation" aria-label="Main navigation">
+      <a href="#why">Why</a>
+      <a href="#taxonomy">Taxonomy</a>
+      <a href="#mapping">Mapping</a>
+      <a href="#contribute">Contribute</a>
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </nav>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  </div>
+  <div class="gradient-orb gradient-orb--1"></div>
+  <div class="gradient-orb gradient-orb--2"></div>
+  <div class="hero__content">
+    <!-- Large Hero Logo -->
+    <div class="hero__logo" aria-label="awesome-agentic-hardening logo">
+      <svg width="100%" height="100%" viewBox="0 0 56 64" fill="none">
+        <defs>
+          <linearGradient id="logo-grad-hero" x1="0" y1="0" x2="56" y2="64" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="var(--color-primary-start)"/>
+            <stop offset="100%" stop-color="var(--color-primary-end)"/>
+          </linearGradient>
+        </defs>
+        <path d="M28 2L52 16V48L28 62L4 48V16L28 2Z" stroke="url(#logo-grad-hero)" stroke-width="2.5" fill="none"/>
+        <path d="M28 14L42 22V38L28 46L14 38V22L28 14Z" stroke="url(#logo-grad-hero)" stroke-width="1.8" fill="none" opacity="0.6"/>
+        <circle cx="28" cy="24" r="3" fill="url(#logo-grad-hero)"/>
+        <circle cx="20" cy="36" r="2.5" fill="url(#logo-grad-hero)" opacity="0.8"/>
+        <circle cx="36" cy="36" r="2.5" fill="url(#logo-grad-hero)" opacity="0.8"/>
+        <circle cx="28" cy="42" r="2" fill="url(#logo-grad-hero)" opacity="0.6"/>
+        <line x1="28" y1="27" x2="20" y2="33.5" stroke="url(#logo-grad-hero)" stroke-width="1.5" opacity="0.5"/>
+        <line x1="28" y1="27" x2="36" y2="33.5" stroke="url(#logo-grad-hero)" stroke-width="1.5" opacity="0.5"/>
+        <line x1="20" y1="38.5" x2="28" y2="40" stroke="url(#logo-grad-hero)" stroke-width="1.2" opacity="0.4"/>
+        <line x1="36" y1="38.5" x2="28" y2="40" stroke="url(#logo-grad-hero)" stroke-width="1.2" opacity="0.4"/>
+      </svg>
+    </div>
+
+    <h1 class="hero__title">awesome-agentic-hardening</h1>
+    <p class="hero__tagline">🛡️ A curated list of tools, papers, frameworks, and best practices for hardening agentic AI systems.</p>
+
+    <div class="hero__actions">
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        Explore on GitHub
+      </a>
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+        中文版
+      </a>
+    </div>
+
+    <div class="hero__badge">
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening/stargazers" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/github/stars/AgenticHardening/awesome-agentic-hardening?style=social" alt="GitHub stars" loading="lazy" width="100" height="20">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MAIN ===== -->
+<main id="main">
+
+<!-- ===== WHY THIS LIST ===== -->
+<section class="section why" id="why">
+  <div class="container">
+    <div class="fade-in">
+      <p class="section__label">Why This List</p>
+      <h2 class="section__title">From Threats to Governance</h2>
+      <p class="section__desc">Organized along the "Attack Surface → Hardening → Evaluation → Governance" pipeline, covering three authoritative source families.</p>
+    </div>
+
+    <div class="why__grid">
+      <div class="pipeline fade-in">
+        <div class="pipeline__step">
+          <div class="pipeline__icon pipeline__icon--threat">⚠️</div>
+          <div class="pipeline__text">
+            <h3>Attack Surface</h3>
+            <p>Know your enemy — understand the threats facing agentic AI systems</p>
+          </div>
+        </div>
+        <div class="pipeline__arrow">↓</div>
+        <div class="pipeline__step">
+          <div class="pipeline__icon pipeline__icon--hardening">🔒</div>
+          <div class="pipeline__text">
+            <h3>Hardening Techniques</h3>
+            <p>Proactive defense — reduce the attack surface of your systems</p>
+          </div>
+        </div>
+        <div class="pipeline__arrow">↓</div>
+        <div class="pipeline__step">
+          <div class="pipeline__icon pipeline__icon--evaluation">🔍</div>
+          <div class="pipeline__text">
+            <h3>Evaluation &amp; Testing</h3>
+            <p>Measure and validate — ensure defenses actually work</p>
+          </div>
+        </div>
+        <div class="pipeline__arrow">↓</div>
+        <div class="pipeline__step">
+          <div class="pipeline__icon pipeline__icon--governance">📋</div>
+          <div class="pipeline__text">
+            <h3>Governance &amp; Standards</h3>
+            <p>Institutional guardrails — policies, standards, and compliance</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="alignment-table fade-in">
+        <table>
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>Coverage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>OWASP Agentic Top 10 (2026)</strong></td>
+              <td><span class="badge badge--full">All ASI01–ASI10 risk items</span></td>
+            </tr>
+            <tr>
+              <td><strong>arXiv Academic Surveys</strong></td>
+              <td>5 threat categories + 4 defense categories</td>
+            </tr>
+            <tr>
+              <td><strong>NIST / McKinsey / CSA</strong></td>
+              <td><span class="badge badge--full">Full governance coverage</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TAXONOMY ===== -->
+<section class="section taxonomy" id="taxonomy">
+  <div class="container">
+    <div class="fade-in">
+      <p class="section__label">Taxonomy</p>
+      <h2 class="section__title">12 Categories, 4 Groups</h2>
+      <p class="section__desc">A comprehensive taxonomy covering the full lifecycle of agentic AI security.</p>
+    </div>
+
+    <div class="taxonomy__groups">
+      <!-- Threat Landscape -->
+      <div class="taxonomy__group taxonomy__group--threat fade-in">
+        <h3 class="taxonomy__group-label">Threat Landscape</h3>
+        <div class="taxonomy__cards">
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#1-prompt-injection--jailbreaks" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">💉</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">01</span>
+              <h3>Prompt Injection &amp; Jailbreaks</h3>
+              <p>Direct/indirect injection, multimodal injection, multilingual obfuscation, payload splitting</p>
+            </div>
+          </a>
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#2-tool-misuse--autonomous-exploitation" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">🔧</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">02</span>
+              <h3>Tool Misuse &amp; Autonomous Exploitation</h3>
+              <p>Unauthorized tool invocation, CVE exploitation, SQL injection chains, code execution escapes</p>
+            </div>
+          </a>
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#3-memory--context-poisoning" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">🧠</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">03</span>
+              <h3>Memory &amp; Context Poisoning</h3>
+              <p>Long-term memory poisoning, RAG data contamination, session context tampering</p>
+            </div>
+          </a>
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#4-multi-agent--protocol-level-threats" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">🌐</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">04</span>
+              <h3>Multi-Agent &amp; Protocol-Level Threats</h3>
+              <p>MCP/A2A protocol attacks, rogue agent registration, cross-agent transitive injection</p>
+            </div>
+          </a>
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#5-identity-privilege--supply-chain-risks" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">🔑</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">05</span>
+              <h3>Identity, Privilege &amp; Supply Chain</h3>
+              <p>Non-human identity management, privilege abuse, credential theft, supply chain poisoning</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hardening Techniques -->
+      <div class="taxonomy__group taxonomy__group--hardening fade-in">
+        <h3 class="taxonomy__group-label">Hardening Techniques</h3>
+        <div class="taxonomy__cards">
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#6-prompt-hardening--input-sanitization" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">🛡️</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">06</span>
+              <h3>Prompt Hardening &amp; Input Sanitization</h3>
+              <p>Instruction isolation, sandwich defense, delimiter strategies, paraphrase detection</p>
+            </div>
+          </a>
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#7-runtime-sandboxing--capability-confinement" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">📦</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">07</span>
+              <h3>Runtime Sandboxing &amp; Capability Confinement</h3>
+              <p>Runtime sandboxing, least-privilege tool invocation, capability-based access control</p>
+            </div>
+          </a>
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#8-detection-monitoring--observability" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">📡</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">08</span>
+              <h3>Detection, Monitoring &amp; Observability</h3>
+              <p>Behavioral anomaly detection, tool call chain auditing, real-time intent monitoring</p>
+            </div>
+          </a>
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#9-multi-agent-security--protocol-hardening" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">🔗</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">09</span>
+              <h3>Multi-Agent Security &amp; Protocol Hardening</h3>
+              <p>MCP/A2A authentication, agent identity verification, cross-agent trust chain management</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Evaluation & Testing -->
+      <div class="taxonomy__group taxonomy__group--evaluation fade-in">
+        <h3 class="taxonomy__group-label">Evaluation &amp; Testing</h3>
+        <div class="taxonomy__cards">
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#10-red-teaming--benchmarks" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">🎯</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">10</span>
+              <h3>Red Teaming &amp; Benchmarks</h3>
+              <p>Security evaluation benchmarks (AgentHarm, InjectAgent, ASB), adversarial testing frameworks</p>
+            </div>
+          </a>
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#11-datasets--reproducible-research" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">📊</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">11</span>
+              <h3>Datasets &amp; Reproducible Research</h3>
+              <p>Attack/defense datasets, reproducible experiments, CTF challenge resources</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Governance & Standards -->
+      <div class="taxonomy__group taxonomy__group--governance fade-in">
+        <h3 class="taxonomy__group-label">Governance &amp; Standards</h3>
+        <div class="taxonomy__cards">
+          <a href="https://github.com/AgenticHardening/awesome-agentic-hardening#12-frameworks-standards--compliance" target="_blank" rel="noopener noreferrer" class="taxonomy-card">
+            <div class="taxonomy-card__icon">📜</div>
+            <div class="taxonomy-card__text">
+              <span class="taxonomy-card__number">12</span>
+              <h3>Frameworks, Standards &amp; Compliance</h3>
+              <p>OWASP Agentic Top 10, NIST AI RMF, Microsoft Governance Framework, CSA AAGATE, McKinsey Handbook</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THREAT-TO-HARDENING MAPPING ===== -->
+<section class="section mapping" id="mapping">
+  <div class="container">
+    <div class="fade-in">
+      <p class="section__label">Mapping</p>
+      <h2 class="section__title">Threat → Defense</h2>
+      <p class="section__desc">Each threat category maps to specific hardening techniques. Here's how they connect.</p>
+    </div>
+
+    <div class="mapping__visual fade-in">
+      <div class="mapping__column mapping__column--threats">
+        <div class="mapping__column-title">Threats</div>
+        <div class="mapping__item mapping__item--threat">
+          <span>💉</span> Prompt Injection &amp; Jailbreaks
+        </div>
+        <div class="mapping__item mapping__item--threat">
+          <span>🔧</span> Tool Misuse &amp; Exploitation
+        </div>
+        <div class="mapping__item mapping__item--threat">
+          <span>🧠</span> Memory &amp; Context Poisoning
+        </div>
+        <div class="mapping__item mapping__item--threat">
+          <span>🌐</span> Multi-Agent Protocol Threats
+        </div>
+        <div class="mapping__item mapping__item--threat">
+          <span>🔑</span> Identity &amp; Supply Chain
+        </div>
+      </div>
+
+      <div class="mapping__arrows" aria-hidden="true">
+        <svg viewBox="0 0 80 280" fill="none" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="arrow-grad" x1="0" y1="0" x2="80" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="var(--color-threat)"/>
+              <stop offset="100%" stop-color="var(--color-hardening)"/>
+            </linearGradient>
+            <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="var(--color-hardening)" opacity="0.6"/>
+            </marker>
+          </defs>
+          <line x1="0" y1="28" x2="72" y2="28" stroke="url(#arrow-grad)" stroke-width="2" opacity="0.5" marker-end="url(#arrowhead)"/>
+          <line x1="0" y1="84" x2="72" y2="84" stroke="url(#arrow-grad)" stroke-width="2" opacity="0.5" marker-end="url(#arrowhead)"/>
+          <line x1="0" y1="140" x2="72" y2="140" stroke="url(#arrow-grad)" stroke-width="2" opacity="0.5" marker-end="url(#arrowhead)"/>
+          <line x1="0" y1="196" x2="72" y2="196" stroke="url(#arrow-grad)" stroke-width="2" opacity="0.5" marker-end="url(#arrowhead)"/>
+          <line x1="0" y1="252" x2="72" y2="252" stroke="url(#arrow-grad)" stroke-width="2" opacity="0.5" marker-end="url(#arrowhead)"/>
+        </svg>
+      </div>
+
+      <div class="mapping__column mapping__column--defenses">
+        <div class="mapping__column-title">Hardening</div>
+        <div class="mapping__item mapping__item--defense">
+          <span>🛡️</span> Prompt Hardening &amp; Sanitization
+        </div>
+        <div class="mapping__item mapping__item--defense">
+          <span>📦</span> Runtime Sandboxing &amp; Confinement
+        </div>
+        <div class="mapping__item mapping__item--defense">
+          <span>📡</span> Detection &amp; Observability
+        </div>
+        <div class="mapping__item mapping__item--defense">
+          <span>🔗</span> Protocol Hardening
+        </div>
+        <div class="mapping__item mapping__item--defense">
+          <span>📋</span> Governance &amp; Standards
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTRIBUTING ===== -->
+<section class="section contributing" id="contribute">
+  <div class="container">
+    <div class="fade-in">
+      <p class="section__label">Get Involved</p>
+      <h2 class="section__title">Help Build the List</h2>
+      <p class="section__desc">awesome-agentic-hardening is community-driven. Every contribution helps the entire ecosystem.</p>
+    </div>
+
+    <div class="contributing__grid fade-in">
+      <div class="contributing__card">
+        <div class="contributing__card-icon">🌟</div>
+        <h3>Star &amp; Share</h3>
+        <p>Star the repo on GitHub to help others discover it, and share with your network.</p>
+        <a href="https://github.com/AgenticHardening/awesome-agentic-hardening/stargazers" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Star on GitHub</a>
+      </div>
+      <div class="contributing__card">
+        <div class="contributing__card-icon">📝</div>
+        <h3>Submit Resources</h3>
+        <p>Found a paper, tool, or framework? Open a PR following our contribution guidelines.</p>
+        <a href="https://github.com/AgenticHardening/awesome-agentic-hardening/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Contributing Guide</a>
+      </div>
+      <div class="contributing__card">
+        <div class="contributing__card-icon">🐛</div>
+        <h3>Report Issues</h3>
+        <p>Spot a broken link, outdated entry, or missing category? Let us know via GitHub Issues.</p>
+        <a href="https://github.com/AgenticHardening/awesome-agentic-hardening/issues" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Open an Issue</a>
+      </div>
+    </div>
+
+    <div class="contributing__cta fade-in">
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        Explore the Full List
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="footer">
+  <div class="container footer__inner">
+    <div class="footer__links">
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contributing</a>
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener noreferrer">Code of Conduct</a>
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening/blob/main/SECURITY.md" target="_blank" rel="noopener noreferrer">Security Policy</a>
+    </div>
+
+    <div class="footer__lang">
+      <button class="footer__lang-btn footer__lang-btn--active" data-lang="en">EN</button>
+      <a href="https://github.com/AgenticHardening/awesome-agentic-hardening/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer" class="footer__lang-btn" data-lang="zh">中文</a>
+    </div>
+
+    <div class="footer__meta">
+      <span>CC0 1.0 Universal License</span>
+      <span>·</span>
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js" defer></script>
+</body>
+</html>
