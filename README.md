@@ -178,7 +178,8 @@ Covers security evaluation benchmarks (e.g., AgentHarm, InjectAgent, ASB), red t
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [AgentDojo](https://github.com/ethz-spylab/agentdojo) | 🔧 Tool | Dynamic evaluation framework for testing prompt injection attacks and defenses on tool-calling LLM agents. 97 tasks, 629 security test cases. (ETH Zurich, NeurIPS 2024) |
+| [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | 📊 Dataset | Benchmark for indirect prompt injection in tool-integrated LLM agents. 1,054 test cases across 17 user tools and 62 attacker tools. (UIUC, ACL 2024 Findings) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -206,7 +207,7 @@ Covers OWASP Agentic Top 10, NIST AI RMF Overlays, Microsoft NIST-based Governan
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [OWASP Top 10 for Agentic Applications (2026)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | 📋 Standard | Peer-reviewed framework identifying the 10 most critical security risks (ASI01–ASI10) for autonomous AI agents. Developed by 100+ experts. |
 
 <sub>[Back to top ↑](#contents)</sub>
 

@@ -178,7 +178,8 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 <!-- prettier-ignore -->
 | 资源 | 类型 | 描述 |
 |------|------|------|
-| _即将添加_ | | |
+| [AgentDojo](https://github.com/ethz-spylab/agentdojo) | 🔧 工具 | 动态评测框架，用于测试工具调用型 LLM Agent 的提示词注入攻防。含 97 个任务、629 个安全测试用例。（ETH Zurich，NeurIPS 2024） |
+| [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | 📊 数据集 | 工具集成型 LLM Agent 的间接提示词注入基准测试。含 1,054 个测试用例，覆盖 17 种用户工具和 62 种攻击者工具。（UIUC，ACL 2024 Findings） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
@@ -206,7 +207,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 <!-- prettier-ignore -->
 | 资源 | 类型 | 描述 |
 |------|------|------|
-| _即将添加_ | | |
+| [OWASP Top 10 for Agentic Applications (2026)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | 📋 标准 | 同行评审框架，识别自主 AI Agent 的 10 大关键安全风险（ASI01–ASI10）。由 100+ 位专家共同开发。 |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
