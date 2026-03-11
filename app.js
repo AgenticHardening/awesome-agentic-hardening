@@ -57,21 +57,15 @@
 
   /* ===== HEADER SCROLL BEHAVIOR ===== */
   var header = document.getElementById("header");
-  var lastScrollY = 0;
   var ticking = false;
 
   function onScroll() {
     var scrollY = window.scrollY;
-    if (scrollY > 100) {
-      if (scrollY > lastScrollY && scrollY > 200) {
-        header.classList.add("header--hidden");
-      } else {
-        header.classList.remove("header--hidden");
-      }
+    if (scrollY > 60) {
+      header.classList.add("header--scrolled");
     } else {
-      header.classList.remove("header--hidden");
+      header.classList.remove("header--scrolled");
     }
-    lastScrollY = scrollY;
     ticking = false;
   }
 

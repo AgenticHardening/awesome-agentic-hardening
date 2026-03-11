@@ -188,8 +188,8 @@ body {
               box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.header--hidden {
-  transform: translateY(-100%);
+.header--scrolled {
+  box-shadow: var(--shadow-sm);
 }
 
 .header__inner {
