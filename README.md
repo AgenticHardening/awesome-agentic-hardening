@@ -68,7 +68,7 @@ Covers direct prompt injection (DPI), indirect prompt injection (IPI), multimoda
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [Agentic AI Security: Threats, Defenses, Evaluation, and Open Challenges](https://arxiv.org/abs/2510.23883) | 📄 Paper | Comprehensive survey covering a taxonomy of agentic AI threats (prompt injection, tool misuse, memory poisoning, etc.), defense strategies, and evaluation methodologies. (UC Davis, arXiv 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -101,7 +101,7 @@ Covers MCP (Model Context Protocol) and A2A (Agent-to-Agent) protocol-level atta
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [MCP Safety Audit](https://github.com/johnhalloran321/mcpSafetyScanner) | 🔧 Tool | First agentic auditing tool for MCP server security. Demonstrates that MCP design enables major exploits including malicious code execution, remote access control, and credential theft. Includes MCPSafetyScanner. (arXiv 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -129,7 +129,7 @@ Covers prompt hardening engineering, input/output filtering, instruction isolati
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [MCP-Guard](https://arxiv.org/abs/2508.10991) | 📦 Framework | Multi-stage defense-in-depth framework for securing MCP-based LLM-tool interactions. Three-stage pipeline: static scanning → deep neural detection → LLM arbitration. Achieves 96.01% accuracy. Includes MCP-ATTACKBENCH (70,448 samples). (arXiv 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -162,7 +162,7 @@ Covers protocol-level hardening (MCP/A2A authentication & encryption), agent ide
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [G-Safeguard](https://github.com/wslong20/G-safeguard) | 🔧 Tool | Topology-guided security framework for LLM-based multi-agent systems. Uses graph neural networks to detect anomalies on multi-agent utterance graphs and topological intervention for attack remediation. Recovers over 40% performance under prompt injection. (arXiv 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -181,6 +181,7 @@ Covers security evaluation benchmarks (e.g., AgentHarm, InjectAgent, ASB), red t
 |----------|------|-------------|
 | [AgentDojo](https://github.com/ethz-spylab/agentdojo) | 🔧 Tool | Dynamic evaluation framework for testing prompt injection attacks and defenses on tool-calling LLM agents. 97 tasks, 629 security test cases. (ETH Zurich, NeurIPS 2024) |
 | [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | 📊 Dataset | Benchmark for indirect prompt injection in tool-integrated LLM agents. 1,054 test cases across 17 user tools and 62 attacker tools. (UIUC, ACL 2024 Findings) |
+| [Agent Security Bench (ASB)](https://github.com/agiresearch/ASB) | 📦 Framework | Comprehensive framework formalizing and benchmarking attacks/defenses for LLM agents. 10 scenarios, 10 agents, 400+ tools, 27 attack/defense methods, 7 metrics. Highest avg ASR of 84.30%. (Rutgers, ICLR 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 

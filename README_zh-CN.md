@@ -68,7 +68,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 <!-- prettier-ignore -->
 | 资源 | 类型 | 描述 |
 |------|------|------|
-| _即将添加_ | | |
+| [Agentic AI Security: Threats, Defenses, Evaluation, and Open Challenges](https://arxiv.org/abs/2510.23883) | 📄 论文 | 全面综述，覆盖 Agentic AI 威胁分类体系（提示词注入、工具滥用、记忆投毒等）、防御策略与评估方法。（UC Davis，arXiv 2025） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
@@ -101,7 +101,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 <!-- prettier-ignore -->
 | 资源 | 类型 | 描述 |
 |------|------|------|
-| _即将添加_ | | |
+| [MCP Safety Audit](https://github.com/johnhalloran321/mcpSafetyScanner) | 🔧 工具 | 首个 MCP 服务器安全审计智能体工具。证明 MCP 设计存在严重安全漏洞，包括恶意代码执行、远程访问控制和凭证窃取。含 MCPSafetyScanner 工具。（arXiv 2025） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
@@ -129,7 +129,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 <!-- prettier-ignore -->
 | 资源 | 类型 | 描述 |
 |------|------|------|
-| _即将添加_ | | |
+| [MCP-Guard](https://arxiv.org/abs/2508.10991) | 📦 框架 | MCP 协议多层纵深防御框架。三阶段流水线：静态扫描 → 深度神经检测 → LLM 仲裁。检测精度达 96.01%。含 MCP-ATTACKBENCH 基准测试集（70,448 样本）。（arXiv 2025） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
@@ -162,7 +162,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 <!-- prettier-ignore -->
 | 资源 | 类型 | 描述 |
 |------|------|------|
-| _即将添加_ | | |
+| [G-Safeguard](https://github.com/wslong20/G-safeguard) | 🔧 工具 | 基于拓扑引导的 LLM 多智能体系统安全框架。利用图神经网络检测多智能体话语图异常，并通过拓扑干预进行攻击修复。在提示词注入攻击下恢复超过 40% 性能。（arXiv 2025） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
@@ -181,6 +181,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 |------|------|------|
 | [AgentDojo](https://github.com/ethz-spylab/agentdojo) | 🔧 工具 | 动态评测框架，用于测试工具调用型 LLM Agent 的提示词注入攻防。含 97 个任务、629 个安全测试用例。（ETH Zurich，NeurIPS 2024） |
 | [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | 📊 数据集 | 工具集成型 LLM Agent 的间接提示词注入基准测试。含 1,054 个测试用例，覆盖 17 种用户工具和 62 种攻击者工具。（UIUC，ACL 2024 Findings） |
+| [Agent Security Bench (ASB)](https://github.com/agiresearch/ASB) | 📦 框架 | 全面的 LLM Agent 攻防形式化与基准测试框架。含 10 个场景、10 个智能体、400+ 工具、27 种攻防方法、7 项评估指标。最高平均攻击成功率 84.30%。（Rutgers，ICLR 2025） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
