@@ -79,7 +79,7 @@ Covers unauthorized tool invocation, autonomous vulnerability exploitation (one-
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [ToolHijacker](https://arxiv.org/abs/2504.19793) | 📄 Paper | First prompt injection attack targeting tool selection in LLM agents. Injects malicious tool documents to manipulate retrieval and selection, achieving 96.7% ASR. Existing defenses (StruQ, SecAlign, PPL detection) proven insufficient. (HUST/Duke, NDSS 2026) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -90,7 +90,7 @@ Covers long-term memory poisoning, RAG data contamination, and session context t
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [A-MemGuard](https://github.com/TangciuYueng/AMemGuard) | 📦 Framework | First proactive defense framework for LLM agent memory. Combines consensus-based validation with dual-memory structure ("lessons" from past failures). Cuts attack success rates by over 95% with minimal utility cost. (OSU/Indiana, arXiv 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -130,6 +130,7 @@ Covers prompt hardening engineering, input/output filtering, instruction isolati
 | Resource | Type | Description |
 |----------|------|-------------|
 | [MCP-Guard](https://arxiv.org/abs/2508.10991) | 📦 Framework | Multi-stage defense-in-depth framework for securing MCP-based LLM-tool interactions. Three-stage pipeline: static scanning → deep neural detection → LLM arbitration. Achieves 96.01% accuracy. Includes MCP-ATTACKBENCH (70,448 samples). (arXiv 2025) |
+| [MELON](https://github.com/kaijiezhu11/MELON) | 🔧 Tool | Provable defense against indirect prompt injection (IPI) in LLM agents. Detects attacks via masked re-execution and tool comparison — prevents over 99% of attacks while preserving utility. (UCSB/Microsoft, ICML 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -151,7 +152,7 @@ Covers behavioral anomaly detection, tool call chain auditing, agent behavior pr
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [DRIFT](https://github.com/SaFoLab-WISC/DRIFT) | 📦 Framework | Dynamic rule-based isolation framework for securing LLM agents. Secure Planner constructs minimal function trajectories, Dynamic Validator monitors deviations, and Injection Isolator masks conflicting instructions from memory. Validated on AgentDojo and ASB. (UW-Madison, NeurIPS 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -182,6 +183,7 @@ Covers security evaluation benchmarks (e.g., AgentHarm, InjectAgent, ASB), red t
 | [AgentDojo](https://github.com/ethz-spylab/agentdojo) | 🔧 Tool | Dynamic evaluation framework for testing prompt injection attacks and defenses on tool-calling LLM agents. 97 tasks, 629 security test cases. (ETH Zurich, NeurIPS 2024) |
 | [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | 📊 Dataset | Benchmark for indirect prompt injection in tool-integrated LLM agents. 1,054 test cases across 17 user tools and 62 attacker tools. (UIUC, ACL 2024 Findings) |
 | [Agent Security Bench (ASB)](https://github.com/agiresearch/ASB) | 📦 Framework | Comprehensive framework formalizing and benchmarking attacks/defenses for LLM agents. 10 scenarios, 10 agents, 400+ tools, 27 attack/defense methods, 7 metrics. Highest avg ASR of 84.30%. (Rutgers, ICLR 2025) |
+| [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | 📊 Dataset | Benchmark for measuring harmfulness of LLM agents with 110 malicious tasks (440 augmented) across 11 harm categories. Reveals frontier LLMs are surprisingly compliant with malicious requests even without jailbreaking. (Gray Swan/UK AISI, ICLR 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 

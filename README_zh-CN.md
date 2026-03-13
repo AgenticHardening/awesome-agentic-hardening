@@ -79,7 +79,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 <!-- prettier-ignore -->
 | 资源 | 类型 | 描述 |
 |------|------|------|
-| _即将添加_ | | |
+| [ToolHijacker](https://arxiv.org/abs/2504.19793) | 📄 论文 | 首个针对 LLM Agent 工具选择的提示词注入攻击。通过注入恶意工具文档操纵检索与选择过程，攻击成功率达 96.7%。现有防御（StruQ、SecAlign、PPL 检测）均被证明无效。（HUST/Duke，NDSS 2026） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
@@ -90,7 +90,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 <!-- prettier-ignore -->
 | 资源 | 类型 | 描述 |
 |------|------|------|
-| _即将添加_ | | |
+| [A-MemGuard](https://github.com/TangciuYueng/AMemGuard) | 📦 框架 | 首个 LLM Agent 记忆主动防御框架。结合共识验证与双记忆结构（从过去失败中提取“教训”）。将攻击成功率降低超过 95%，开销极小。（OSU/Indiana，arXiv 2025） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
@@ -130,6 +130,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 | 资源 | 类型 | 描述 |
 |------|------|------|
 | [MCP-Guard](https://arxiv.org/abs/2508.10991) | 📦 框架 | MCP 协议多层纵深防御框架。三阶段流水线：静态扫描 → 深度神经检测 → LLM 仲裁。检测精度达 96.01%。含 MCP-ATTACKBENCH 基准测试集（70,448 样本）。（arXiv 2025） |
+| [MELON](https://github.com/kaijiezhu11/MELON) | 🔧 工具 | 可证明的间接提示词注入（IPI）防御。通过掩码重新执行与工具对比检测攻击，防御超过 99% 的攻击同时保持实用性。（UCSB/Microsoft，ICML 2025） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
@@ -151,7 +152,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 <!-- prettier-ignore -->
 | 资源 | 类型 | 描述 |
 |------|------|------|
-| _即将添加_ | | |
+| [DRIFT](https://github.com/SaFoLab-WISC/DRIFT) | 📦 框架 | 动态规则隔离防御框架。安全规划器构建最小函数轨迹，动态验证器监控偏离，注入隔离器从记忆流中屏蔽冲突指令。在 AgentDojo 和 ASB 上验证有效。（UW-Madison，NeurIPS 2025） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
@@ -182,6 +183,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 | [AgentDojo](https://github.com/ethz-spylab/agentdojo) | 🔧 工具 | 动态评测框架，用于测试工具调用型 LLM Agent 的提示词注入攻防。含 97 个任务、629 个安全测试用例。（ETH Zurich，NeurIPS 2024） |
 | [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | 📊 数据集 | 工具集成型 LLM Agent 的间接提示词注入基准测试。含 1,054 个测试用例，覆盖 17 种用户工具和 62 种攻击者工具。（UIUC，ACL 2024 Findings） |
 | [Agent Security Bench (ASB)](https://github.com/agiresearch/ASB) | 📦 框架 | 全面的 LLM Agent 攻防形式化与基准测试框架。含 10 个场景、10 个智能体、400+ 工具、27 种攻防方法、7 项评估指标。最高平均攻击成功率 84.30%。（Rutgers，ICLR 2025） |
+| [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | 📊 数据集 | LLM Agent 危害性评测基准。含 110 个恶意任务（440 个增强版），覆盖 11 种危害类别。揭示前沿 LLM 在未越狱情况下即对恶意请求高度服从。（Gray Swan/UK AISI，ICLR 2025） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
