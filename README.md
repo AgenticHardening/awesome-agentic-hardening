@@ -69,6 +69,8 @@ Covers direct prompt injection (DPI), indirect prompt injection (IPI), multimoda
 | Resource | Type | Description |
 |----------|------|-------------|
 | [Agentic AI Security: Threats, Defenses, Evaluation, and Open Challenges](https://arxiv.org/abs/2510.23883) | 📄 Paper | Comprehensive survey covering a taxonomy of agentic AI threats (prompt injection, tool misuse, memory poisoning, etc.), defense strategies, and evaluation methodologies. (UC Davis, arXiv 2025) |
+| [The Attack and Defense Landscape of Agentic AI](https://arxiv.org/abs/2603.11088) | 📄 Paper | Systematic survey of agentic AI security covering design space analysis, full attack landscape, and defense mechanisms. Includes multiple case studies revealing gaps in existing defenses. Accepted at USENIX Security 2026. (UC Berkeley/UIUC, arXiv 2026) |
+| [Palo Alto Unit 42: Web-Based Indirect Prompt Injection](https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/) | 📄 Report | Real-world threat intelligence report from Unit 42 documenting how attackers embed indirect prompt injection in web content to hijack AI agents. Includes live case studies observed in the wild. (Palo Alto Networks, 2026) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -103,6 +105,7 @@ Covers MCP (Model Context Protocol) and A2A (Agent-to-Agent) protocol-level atta
 |----------|------|-------------|
 | [MCP Safety Audit](https://github.com/johnhalloran321/mcpSafetyScanner) | 🔧 Tool | First agentic auditing tool for MCP server security. Demonstrates that MCP design enables major exploits including malicious code execution, remote access control, and credential theft. Includes MCPSafetyScanner. (arXiv 2025) |
 | [From Prompt Injections to Protocol Exploits](https://www.sciencedirect.com/science/article/pii/S2405959525001997) | 📄 Paper | First unified end-to-end threat model covering both host-to-tool and agent-to-agent communication channels. Covers MCP/A2A protocol-layer attack surfaces and defense taxonomy. (ScienceDirect, 2025) |
+| [Agentic AI as a Cybersecurity Attack Surface](https://arxiv.org/abs/2602.19555) | 📄 Paper | Introduces the Viral Agent Loop concept — self-propagating generative worms exploiting multi-agent trust chains. Proposes Zero-Trust Runtime Architecture with cryptographic proof-of-intent for tool execution constraints. (arXiv 2026) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -144,6 +147,7 @@ Covers runtime sandboxing, least-privilege tool invocation, and capability-based
 | Resource | Type | Description |
 |----------|------|-------------|
 | [MCP November 2025 Specification](https://spec.modelcontextprotocol.io/) | 📋 Standard | Official MCP specification update introducing async execution, OAuth 2.1 authorization flows, and Registry-level supply chain trust. Defines capability scoping for least-privilege tool invocation in multi-agent deployments. |
+| [Best MCP Gateways & AI Agent Security Tools (2026)](https://www.integrate.io/blog/best-mcp-gateways-and-ai-agent-security-tools/) | 📋 Guide | Comprehensive comparison of MCP gateway solutions including OAuth 2.0 wrapping, least-privilege endpoint enforcement, SOC 2 audit trails, and real-time tool call monitoring. (Integrate.io, 2026) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -216,6 +220,8 @@ Covers OWASP Agentic Top 10, NIST AI RMF Overlays, Microsoft NIST-based Governan
 |----------|------|-------------|
 | [OWASP Top 10 for Agentic Applications (2026)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | 📋 Standard | Peer-reviewed framework identifying the 10 most critical security risks (ASI01–ASI10) for autonomous AI agents. Developed by 100+ experts. |
 | [ISO/IEC 42001:2023 AI Management System](https://www.iso.org/standard/81230.html) | 📋 Standard | International standard for AI management systems. Increasingly cited as a mandatory compliance baseline alongside NIST AI RMF for enterprise agentic AI deployments. Covers risk management, transparency, and accountability requirements. |
+| [TRiSM for Agentic AI](https://www.sciencedirect.com/science/article/pii/S2666651026000069) | 📄 Paper | Comprehensive review of Trust, Risk, and Security Management (TRiSM) frameworks applied to Agentic AI. Analyzes growth from 890 to 18,500+ arXiv papers (2019–2024) and maps governance gaps. (ScienceDirect, 2026) |
+| [IBM: A Guide to Agentic AI Security](https://www.ibm.com/think/insights/agentic-ai-security) | 📋 Guide | Enterprise-focused guide covering identity federation, least-privilege principles, and compliance alignment for agentic AI deployments. (IBM, Feb 2026) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
