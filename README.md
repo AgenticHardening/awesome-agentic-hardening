@@ -102,6 +102,7 @@ Covers MCP (Model Context Protocol) and A2A (Agent-to-Agent) protocol-level atta
 | Resource | Type | Description |
 |----------|------|-------------|
 | [MCP Safety Audit](https://github.com/johnhalloran321/mcpSafetyScanner) | 🔧 Tool | First agentic auditing tool for MCP server security. Demonstrates that MCP design enables major exploits including malicious code execution, remote access control, and credential theft. Includes MCPSafetyScanner. (arXiv 2025) |
+| [From Prompt Injections to Protocol Exploits](https://www.sciencedirect.com/science/article/pii/S2405959525001997) | 📄 Paper | First unified end-to-end threat model covering both host-to-tool and agent-to-agent communication channels. Covers MCP/A2A protocol-layer attack surfaces and defense taxonomy. (ScienceDirect, 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -112,7 +113,8 @@ Covers non-human identity (NHI) management, privilege abuse, credential theft, a
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [Securing the AI Agent Revolution: A Practical Guide to MCP Security](https://www.coalitionforsecureai.org/securing-the-ai-agent-revolution-a-practical-guide-to-mcp-security/) | 📋 Whitepaper | Coalition for Secure AI (CoSAI) whitepaper on MCP security best practices. Covers SPIFFE/SPIRE workload identity, OAuth Token Exchange (RFC 8693) to prevent confused deputy attacks, and registry-level supply chain trust. |
+| [MCP Supply Chain Security & Risks](https://mcpmanager.ai/blog/mcp-supply-chain-security/) | 📄 Article | Analysis of supply chain risks in widely-used MCP servers (Asana, Smithery, GitHub, etc.). Covers rugpull/update poisoning attack patterns and mitigation strategies. |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -141,7 +143,7 @@ Covers runtime sandboxing, least-privilege tool invocation, and capability-based
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [MCP November 2025 Specification](https://spec.modelcontextprotocol.io/) | 📋 Standard | Official MCP specification update introducing async execution, OAuth 2.1 authorization flows, and Registry-level supply chain trust. Defines capability scoping for least-privilege tool invocation in multi-agent deployments. |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -153,6 +155,7 @@ Covers behavioral anomaly detection, tool call chain auditing, agent behavior pr
 | Resource | Type | Description |
 |----------|------|-------------|
 | [DRIFT](https://github.com/SaFoLab-WISC/DRIFT) | 📦 Framework | Dynamic rule-based isolation framework for securing LLM agents. Secure Planner constructs minimal function trajectories, Dynamic Validator monitors deviations, and Injection Isolator masks conflicting instructions from memory. Validated on AgentDojo and ASB. (UW-Madison, NeurIPS 2025) |
+| [Lasso Security](https://www.lasso.security/) | 🔧 Tool | SaaS observability layer for agentic AI. Provides continuous discovery of agent-tool interactions, context-aware risk scoring, and real-time behavioral anomaly alerting across multi-agent pipelines. |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -194,7 +197,7 @@ Covers publicly available attack/defense datasets, reproducible experiments, and
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
-| _Coming soon_ | | |
+| [MCP-ATTACKBENCH](https://arxiv.org/abs/2508.10991) | 📊 Dataset | Large-scale benchmark dataset with 70,448 samples for evaluating MCP-based LLM-tool interaction security. Covers prompt injection, tool hijacking, and protocol-level attack variants. Released alongside MCP-Guard. (arXiv 2025) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
@@ -212,6 +215,7 @@ Covers OWASP Agentic Top 10, NIST AI RMF Overlays, Microsoft NIST-based Governan
 | Resource | Type | Description |
 |----------|------|-------------|
 | [OWASP Top 10 for Agentic Applications (2026)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | 📋 Standard | Peer-reviewed framework identifying the 10 most critical security risks (ASI01–ASI10) for autonomous AI agents. Developed by 100+ experts. |
+| [ISO/IEC 42001:2023 AI Management System](https://www.iso.org/standard/81230.html) | 📋 Standard | International standard for AI management systems. Increasingly cited as a mandatory compliance baseline alongside NIST AI RMF for enterprise agentic AI deployments. Covers risk management, transparency, and accountability requirements. |
 
 <sub>[Back to top ↑](#contents)</sub>
 
