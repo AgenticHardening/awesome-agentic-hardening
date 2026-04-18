@@ -153,6 +153,7 @@ Covers runtime sandboxing, least-privilege tool invocation, and capability-based
 |----------|------|-------------|
 | [MCP November 2025 Specification](https://modelcontextprotocol.io/specification/2025-11-25) | 📋 Standard | Official MCP specification update introducing async execution, OAuth 2.1 authorization flows, and Registry-level supply chain trust. Defines capability scoping for least-privilege tool invocation in multi-agent deployments. |
 | [Best MCP Gateways & AI Agent Security Tools (2026)](https://www.integrate.io/blog/best-mcp-gateways-and-ai-agent-security-tools/) | 📋 Guide | Comprehensive comparison of MCP gateway solutions including OAuth 2.0 wrapping, least-privilege endpoint enforcement, SOC 2 audit trails, and real-time tool call monitoring. (Integrate.io, 2026) |
+| [Hazmat](https://github.com/dredozubov/hazmat) | 🔧 Tool | macOS-native runtime containment for AI agents and coding-agent workflows. Combines a dedicated macOS user identity, Seatbelt sandboxing via the kernel `sandbox_init()` API (called from a small privileged helper, not `sandbox-exec`), PF firewall anchors, DNS blocklists, and backup/rollback to reduce host and network blast radius. Backed by a TLA+-checked design — nine specs (~44,795 states) cover setup/rollback ordering, seatbelt credential-deny policy, backup safety, version migration, Tier 2/Tier 3 policy equivalence, session-time host permission repairs, harness lifecycle, and helper fd isolation pre-`sandbox_init()`. |
 
 <sub>[Back to top ↑](#contents)</sub>
 
