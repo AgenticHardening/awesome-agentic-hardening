@@ -153,6 +153,7 @@ Covers runtime sandboxing, least-privilege tool invocation, and capability-based
 |----------|------|-------------|
 | [MCP November 2025 Specification](https://modelcontextprotocol.io/specification/2025-11-25) | 📋 Standard | Official MCP specification update introducing async execution, OAuth 2.1 authorization flows, and Registry-level supply chain trust. Defines capability scoping for least-privilege tool invocation in multi-agent deployments. |
 | [Best MCP Gateways & AI Agent Security Tools (2026)](https://www.integrate.io/blog/best-mcp-gateways-and-ai-agent-security-tools/) | 📋 Guide | Comprehensive comparison of MCP gateway solutions including OAuth 2.0 wrapping, least-privilege endpoint enforcement, SOC 2 audit trails, and real-time tool call monitoring. (Integrate.io, 2026) |
+| [APort](https://aport.io/) | 🔧 Tool | Runtime policy and verification layer for AI agents and MCP tools, providing auditable guardrails for tool use and approvals. |
 
 <sub>[Back to top ↑](#contents)</sub>
 

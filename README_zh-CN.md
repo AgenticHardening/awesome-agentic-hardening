@@ -153,6 +153,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 |------|------|------|
 | [MCP November 2025 Specification](https://modelcontextprotocol.io/specification/2025-11-25) | 📋 标准 | MCP 官方规范更新，引入异步执行、OAuth 2.1 授权流程和注册表级供应链信任。为多智能体部署定义了最小权限工具调用的能力范围（capability scoping）。 |
 | [Best MCP Gateways & AI Agent Security Tools (2026)](https://www.integrate.io/blog/best-mcp-gateways-and-ai-agent-security-tools/) | 📋 指南 | MCP 网关解决方案全面对比，涵盖 OAuth 2.0 封装、最小权限端点执行、SOC 2 审计追踪和实时工具调用监控。（Integrate.io，2026） |
+| [APort](https://aport.io/) | 🔧 工具 | 面向 AI Agent 和 MCP 工具的运行时策略与验证层，为工具调用和审批流程提供可审计的护栏。 |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
