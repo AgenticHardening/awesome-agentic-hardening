@@ -132,6 +132,7 @@ Covers non-human identity (NHI) management, privilege abuse, credential theft, a
 
 > *Proactive defense — Reducing the attack surface of your agentic systems.*
 
+| [TWZRD Agent Intel](https://intel.twzrd.xyz) | 🔧 Tool | On-chain behavioral identity verification MCP server for AI agents on Solana. Score agent wallet reputation, run preflight identity checks, and generate x402-gated cryptographic trust receipts. Addresses NHI verification for autonomous agents operating in agentic pipelines. Free MCP: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}` |
 ### 6. Prompt Hardening & Input Sanitization
 
 Covers prompt hardening engineering, input/output filtering, instruction isolation, sandwich defense, XML/Markdown delimiter strategies, paraphrase-based detection, and more.
