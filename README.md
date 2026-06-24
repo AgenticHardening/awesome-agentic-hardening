@@ -216,6 +216,8 @@ Covers publicly available attack/defense datasets, reproducible experiments, and
 
 > *Institutional guardrails — Policies, standards, and compliance frameworks.*
 
+- [Nobulex](https://github.com/arian-gogani/nobulex) — Ed25519-signed, JCS-canonical (RFC 8785) action receipts for AI agents. Bilateral pre/post execution receipts with hash-chaining; independently verifiable without operator trust. EU AI Act Article 12 compliance primitive. `pip install nobulex` / `npm install @nobulex/core`.
+
 ### 12. Frameworks, Standards & Compliance
 
 Covers OWASP Agentic Top 10, NIST AI RMF Overlays, Microsoft NIST-based Governance Framework, CSA AAGATE Platform, McKinsey Agentic AI Governance Handbook, and more.
