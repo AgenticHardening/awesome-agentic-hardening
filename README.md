@@ -207,6 +207,7 @@ Covers publicly available attack/defense datasets, reproducible experiments, and
 | Resource | Type | Description |
 |----------|------|-------------|
 | [MCP-ATTACKBENCH](https://arxiv.org/abs/2508.10991) | 📊 Dataset | Large-scale benchmark dataset with 70,448 samples for evaluating MCP-based LLM-tool interaction security. Covers prompt injection, tool hijacking, and protocol-level attack variants. Released alongside MCP-Guard. (arXiv 2025) |
+| [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) | 📊 Dataset | Open database of real-world AI agent security incidents recorded month by month since January 2025, one Markdown record per event with primary sources and an attack-chain diagram. Separates confirmed harm from research demonstrations; JSON/CSV exports, CC BY 4.0. (Continuum AI, 2026) |
 
 <sub>[Back to top ↑](#contents)</sub>
 

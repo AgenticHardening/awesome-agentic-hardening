@@ -207,6 +207,7 @@ Agentic AI 系统——基于 LLM 驱动的智能体，能够自主使用工具�
 | 资源 | 类型 | 描述 |
 |------|------|------|
 | [MCP-ATTACKBENCH](https://arxiv.org/abs/2508.10991) | 📊 数据集 | 大规模基准数据集，含 70,448 个样本，用于评估 MCP 协议下 LLM-工具交互安全。覆盖提示词注入、工具劫持和协议层攻击变体。随 MCP-Guard 一起发布。（arXiv 2025） |
+| [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) | 📊 数据集 | 真实世界 AI agent 安全事件的开放数据库，自 2025 年 1 月起逐月收录，每个事件一个 Markdown 记录，附一手来源和攻击链图。区分已确认受害与研究演示；提供 JSON/CSV 导出，CC BY 4.0。（Continuum AI，2026） |
 
 <sub>[回到顶部 ↑](#目录)</sub>
 
