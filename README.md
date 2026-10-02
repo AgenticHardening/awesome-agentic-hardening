@@ -151,6 +151,7 @@ Covers runtime sandboxing, least-privilege tool invocation, and capability-based
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
+| [DAI: A Domain-Specific LLM with Model-Excluded Authority, Capability-Disjoint Verification, and Recomputable Receipts](https://doi.org/10.5281/zenodo.23089652) | 📄 Paper | Preprint describing a domain-specific LLM with action authority outside the model, capability-disjoint verification, and recomputable receipts for governed cyber defense. (Hiago Kin Levi, 2026; not peer-reviewed) |
 | [MCP November 2025 Specification](https://modelcontextprotocol.io/specification/2025-11-25) | 📋 Standard | Official MCP specification update introducing async execution, OAuth 2.1 authorization flows, and Registry-level supply chain trust. Defines capability scoping for least-privilege tool invocation in multi-agent deployments. |
 | [Best MCP Gateways & AI Agent Security Tools (2026)](https://www.integrate.io/blog/best-mcp-gateways-and-ai-agent-security-tools/) | 📋 Guide | Comprehensive comparison of MCP gateway solutions including OAuth 2.0 wrapping, least-privilege endpoint enforcement, SOC 2 audit trails, and real-time tool call monitoring. (Integrate.io, 2026) |
 
@@ -223,6 +224,7 @@ Covers OWASP Agentic Top 10, NIST AI RMF Overlays, Microsoft NIST-based Governan
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
+| [Autonomous Defensive AI: An Envelope-and-Evidence Framework for Governed LLMs Acting on Production Infrastructure](https://doi.org/10.5281/zenodo.23089594) | 📄 Paper | Preprint defining defended perimeters, bounded effects, rollback, and independent verification as an action envelope for autonomous cyber defense. (Hiago Kin Levi, 2026; not peer-reviewed) |
 | [OWASP Top 10 for Agentic Applications (2026)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | 📋 Standard | Peer-reviewed framework identifying the 10 most critical security risks (ASI01–ASI10) for autonomous AI agents. Developed by 100+ experts. |
 | [ISO/IEC 42001:2023 AI Management System](https://www.iso.org/standard/81230.html) | 📋 Standard | International standard for AI management systems. Increasingly cited as a mandatory compliance baseline alongside NIST AI RMF for enterprise agentic AI deployments. Covers risk management, transparency, and accountability requirements. |
 | [TRiSM for Agentic AI](https://www.sciencedirect.com/science/article/pii/S2666651026000069) | 📄 Paper | Comprehensive review of Trust, Risk, and Security Management (TRiSM) frameworks applied to Agentic AI. Analyzes growth from 890 to 18,500+ arXiv papers (2019–2024) and maps governance gaps. (ScienceDirect, 2026) |
