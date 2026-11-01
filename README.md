@@ -153,6 +153,7 @@ Covers runtime sandboxing, least-privilege tool invocation, and capability-based
 |----------|------|-------------|
 | [MCP November 2025 Specification](https://modelcontextprotocol.io/specification/2025-11-25) | 📋 Standard | Official MCP specification update introducing async execution, OAuth 2.1 authorization flows, and Registry-level supply chain trust. Defines capability scoping for least-privilege tool invocation in multi-agent deployments. |
 | [Best MCP Gateways & AI Agent Security Tools (2026)](https://www.integrate.io/blog/best-mcp-gateways-and-ai-agent-security-tools/) | 📋 Guide | Comprehensive comparison of MCP gateway solutions including OAuth 2.0 wrapping, least-privilege endpoint enforcement, SOC 2 audit trails, and real-time tool call monitoring. (Integrate.io, 2026) |
+| [HOL Guard](https://hol.org/guard) | 🔧 Tool | Apache-2.0 runtime policy checks for supported AI coding agents. Covered shell, sensitive-file, and MCP actions can be allowed, reviewed, or blocked before execution, with local decision receipts. Coverage depends on available agent hooks; this is not an OS sandbox. |
 
 <sub>[Back to top ↑](#contents)</sub>
 
