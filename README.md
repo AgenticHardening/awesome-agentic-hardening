@@ -94,6 +94,7 @@ Covers long-term memory poisoning, RAG data contamination, and session context t
 | Resource | Type | Description |
 |----------|------|-------------|
 | [A-MemGuard](https://github.com/TangciuYueng/AMemGuard) | 📦 Framework | First proactive defense framework for LLM agent memory. Combines consensus-based validation with dual-memory structure ("lessons" from past failures). Cuts attack success rates by over 95% with minimal utility cost. (OSU/Indiana, arXiv 2025) |
+| [Memory Poison Lab](https://github.com/RishabhPande/memory-poison-lab) | 📖 Guide | Synthetic Python exercises for memory poisoning, provenance-aware defenses and conflict-scoped repair with a scripted agent. |
 
 <sub>[Back to top ↑](#contents)</sub>
 
