@@ -196,6 +196,7 @@ Covers security evaluation benchmarks (e.g., AgentHarm, InjectAgent, ASB), red t
 | [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) | 📊 Dataset | Benchmark for indirect prompt injection in tool-integrated LLM agents. 1,054 test cases across 17 user tools and 62 attacker tools. (UIUC, ACL 2024 Findings) |
 | [Agent Security Bench (ASB)](https://github.com/agiresearch/ASB) | 📦 Framework | Comprehensive framework formalizing and benchmarking attacks/defenses for LLM agents. 10 scenarios, 10 agents, 400+ tools, 27 attack/defense methods, 7 metrics. Highest avg ASR of 84.30%. (Rutgers, ICLR 2025) |
 | [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | 📊 Dataset | Benchmark for measuring harmfulness of LLM agents with 110 malicious tasks (440 augmented) across 11 harm categories. Reveals frontier LLMs are surprisingly compliant with malicious requests even without jailbreaking. (Gray Swan/UK AISI, ICLR 2025) |
+| [Adversarial Feed (free sample)](https://github.com/AdamDiStefanoAI/adversarial-feed-sample) | 🔧 Tool | Ten free high-severity adversarial tests for tool-calling agents, each with expected behavior and fail markers, plus a dependency-free scoring runner. Sample of a monthly 100-test pack; a state-verification category joins in December 2026. 
 
 <sub>[Back to top ↑](#contents)</sub>
 
