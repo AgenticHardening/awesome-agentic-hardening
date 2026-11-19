@@ -43,6 +43,7 @@ The taxonomy aligns with three authoritative sources:
   - [Memory & Context Poisoning](#3-memory--context-poisoning)
   - [Multi-Agent & Protocol-Level Threats](#4-multi-agent--protocol-level-threats)
   - [Identity, Privilege & Supply Chain Risks](#5-identity-privilege--supply-chain-risks)
+  - [Real-World Incident Analyses](#real-world-incident-analyses)
 - [Hardening Techniques](#hardening-techniques)
   - [Prompt Hardening & Input Sanitization](#6-prompt-hardening--input-sanitization)
   - [Runtime Sandboxing & Capability Confinement](#7-runtime-sandboxing--capability-confinement)
@@ -123,6 +124,19 @@ Covers non-human identity (NHI) management, privilege abuse, credential theft, a
 | [WEF: Non-Human Identities — Agentic AI's New Frontier of Cybersecurity Risk](https://www.weforum.org/stories/2025/10/non-human-identities-ai-cybersecurity/) | 📄 Article | World Economic Forum analysis of NHI risks from a national policy and cryptographic infrastructure perspective. Most zero-trust architectures only address human identity layers, leaving agent API keys, service accounts, and auth tokens ungoverned. References NSM-10, EO 14028, and OMB M-23-02 mandates for real-time cryptographic asset inventory, and highlights urgency of Post-Quantum Cryptography (PQC) transition. (WEF, Oct 2025) |
 | [Supply Chain Attacks 2026: From SolarWinds to AI Agent Compromise](https://dig8ital.com/articles/supply-chain-attacks-ai-era/) | 📄 Article | Deepest technical analysis of AI supply chain attack evolution, covering: **generative poisoning** (contaminated models generating context-aware custom malicious payloads per client), **shared-context prompt injection** (polluting RAG data sources via third-party integrations), and **conversational steganography** (covertly exfiltrating sensitive data via natural language encoding). Extends beyond MCP server-layer to model training and inference pipeline attack paths. (Feb 2026) |
 | [NHIcon 2026: Agentic AI and Security — Paradigm Shifts](https://nhimg.org/community/non-human-identity-management-general-discussions/agentic-ai-and-security-paradigm-shifts-from-nhicon-2026-insights/) | 📋 Report | Non-Human Identity Management community annual conference (NHIcon 2026) summary. Systematically documents the paradigm-level impact of AI agents on identity, trust, and access management architectures. Proposes an NHI governance framework specifically designed for agentic AI — the only community-level document focused on NHI governance practice. Complements CoSAI whitepaper and IBM guide. (Feb 2026) |
+
+<sub>[Back to top ↑](#contents)</sub>
+
+### Real-World Incident Analyses
+
+Covers standalone analyses of real agentic incidents — what the system allowed, why it happened, the OWASP 2026 grades, the fix, and how the fix would be verified.
+
+<!-- prettier-ignore -->
+| Resource | Type | Description |
+|----------|------|-------------|
+| [The Replit Database Deletion: An Agentic Security Analysis](https://saiprasad-cybsec.com/the-replit-database-deletion-an-agentic-security-analysis/) | 📄 Article | July 2025: a coding agent deleted a production database (1,206 records) during a declared code freeze. Graded LLM03 / ASI03 primary. Covers the fix Replit shipped and the fuller control set the case argues for. (Nov 2026) |
+| [The PocketOS Database Deletion: An Agentic Security Analysis](https://saiprasad-cybsec.com/the-pocketos-database-deletion-an-agentic-security-analysis/) | 📄 Article | April 2026: a Cursor agent found a root-scoped Railway token and deleted production + backups in 9 seconds; ~30 h outage. Graded LLM03 / ASI03 primary. (Nov 2026) |
+| [The Claude Code 'Don't Ask Again' Leak: An Agentic Security Analysis](https://saiprasad-cybsec.com/the-claude-code-dont-ask-again-leak-an-agentic-security-analysis/) | 📄 Article | November 2026 (Apiiro): Claude Code's approval memory wrote secrets verbatim into `.claude/settings.local.json`; 2,539 real secrets in 1,994 public repos. Graded LLM02 / ASI03 primary. (Nov 2026) |
 
 <sub>[Back to top ↑](#contents)</sub>
 
