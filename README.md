@@ -139,6 +139,7 @@ Covers prompt hardening engineering, input/output filtering, instruction isolati
 <!-- prettier-ignore -->
 | Resource | Type | Description |
 |----------|------|-------------|
+| [Inbox Sentry](https://github.com/CodeVelo/inbox-sentry) | 🔧 Tool | A free, read-only Grok Bot template that screens Outlook mail for prompt injection, phishing, and scams before other bots read the message body. |
 | [MCP-Guard](https://arxiv.org/abs/2508.10991) | 📦 Framework | Multi-stage defense-in-depth framework for securing MCP-based LLM-tool interactions. Three-stage pipeline: static scanning → deep neural detection → LLM arbitration. Achieves 96.01% accuracy. Includes MCP-ATTACKBENCH (70,448 samples). (arXiv 2025) |
 | [MELON](https://github.com/kaijiezhu11/MELON) | 🔧 Tool | Provable defense against indirect prompt injection (IPI) in LLM agents. Detects attacks via masked re-execution and tool comparison — prevents over 99% of attacks while preserving utility. (UCSB/Microsoft, ICML 2025) |
 
